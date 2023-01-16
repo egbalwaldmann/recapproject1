@@ -1,11 +1,11 @@
-.navigation {
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   /* padding: 0 1rem; */
-  background-color: lightgreen;
-  color: beige;
+  background-color: maroon;
+  color: white;
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -22,4 +22,63 @@ a {
 }
 body {
   margin: 0;
+}
+
+img {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding: 0 1rem; */
+  background-color: maroon;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  height: 3rem;
+  list-style-type: none;
+  text-decoration: none;
+  margin-top: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+main {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+p {
+  padding-top: 15px;
+  margin: 15px;
+}
+
+.question-one {
+  background-color: lightcoral;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  margin: 15px;
+  min-height: 100px;
 }
