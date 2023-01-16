@@ -83,10 +83,9 @@ p {
   min-height: 100px;
 }
 
-
 button {
   display: block;
-  margin: 0 auto;
+  margin: 15px auto;
   background-color: green;
   color: white;
   border: none;
@@ -100,7 +99,7 @@ button {
 }
 
 .answer-one {
-  /* display: none; */
+  display: none;
   background-color: lightgreen;
   padding: 20px;
   margin: 20px 0;
@@ -110,14 +109,14 @@ button {
 }
 
 .keyword {
-  font-weight: bold;
-  color: red;
-  border: black solid 1px;
+  /* font-weight: bold; */
+  color: white;
+  /* border: black solid 1px; */
+  background-color: purple;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   margin: 5px;
-  
-  
+  /* margin-top: 20px; */
 }
 .keywords-list {
   font-weight: bold;
