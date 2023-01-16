@@ -74,13 +74,14 @@ p {
   margin: 15px;
 }
 
-.question-one {
+.question-itself {
   background-color: lightcoral;
   padding: 20px;
   margin: 20px 0;
   border-radius: 5px;
   margin: 15px;
-  min-height: 100px;
+  font-size: 2rem;
+  text-align: center;
 }
 
 button {
@@ -124,4 +125,14 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.question-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  background-color: yellow;
+  padding: 10px;
 }
