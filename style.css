@@ -24,13 +24,22 @@ body {
   margin: 0;
 }
 
-img {
+main .question-component img {
+  width: 40px;
+  height: auto;
+  /* border-radius: 50%; */
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
+footer .footer-items img {
   width: 40px;
   height: auto;
   border-radius: 50%;
 }
 
-.footer {
+.footer-items {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -135,4 +144,5 @@ button {
   margin: 15px;
   background-color: yellow;
   padding: 10px;
+  position: relative;
 }
