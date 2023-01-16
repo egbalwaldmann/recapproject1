@@ -65,8 +65,8 @@ nav {
   width: 100%;
 }
 main {
-  margin-top: 6rem;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 7rem;
 }
 
 p {
@@ -81,4 +81,48 @@ p {
   border-radius: 5px;
   margin: 15px;
   min-height: 100px;
+}
+
+
+button {
+  display: block;
+  margin: 0 auto;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+.answer-one {
+  /* display: none; */
+  background-color: lightgreen;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  margin: 15px;
+  min-height: 100px;
+}
+
+.keyword {
+  font-weight: bold;
+  color: red;
+  border: black solid 1px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  
+  
+}
+.keywords-list {
+  font-weight: bold;
+  color: red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
