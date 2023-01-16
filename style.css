@@ -4,7 +4,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   /* padding: 0 1rem; */
-  background-color: maroon;
+  background-color: rgb(214, 14, 81);
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
@@ -45,7 +45,7 @@ footer .footer-items img {
   justify-content: space-evenly;
   align-items: center;
   /* padding: 0 1rem; */
-  background-color: maroon;
+  background-color: rgb(214, 14, 81);
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
@@ -84,7 +84,7 @@ p {
 }
 
 .question-itself {
-  background-color: lightcoral;
+  background-color: rgb(128, 232, 240);
   padding: 20px;
   margin: 20px 0;
   border-radius: 5px;
