@@ -1,5 +1,5 @@
-#region[rgba(0, 0, 255, 0.1)]
-#endregion
+<!-- #region[rgba(0, 0, 255, 0.1)]
+#endregion -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
     <title>Quiz App</title>
   </head>
   <body>
@@ -16,14 +17,18 @@
     </header>
     <main>
       <article class="question-component">
-        <img src="assets/bookmark-regular.svg" alt="bookmarking symbol" />
+        <img
+          src="assets/bookmark-regular.svg"
+          alt="bookmarking symbol"
+          data-js="bookmark-regular";
+        />
         <!-- <i class="fa-solid fa-bookmark"></i> -->
         <h2>Question 1:</h2>
         <div class="question-itself">What is Lorem Ipsum?</div>
         <div class="answer-button">
           <button>Show Answer</button>
         </div>
-        <div class="answer-one">
+        <div class="answer-one" data-js="answer-one">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias est
           pariatur perferendis quod id nesciunt temporibus repudiandae repellat
           quidem, fuga nobis voluptas eius ab dicta ipsam earum repellendus,
@@ -38,7 +43,8 @@
       </article>
 
       <article class="question-component">
-        <img src="assets/bookmark-solid.svg" alt="bookmarking symbol" />
+        <img src="assets/bookmark-solid.svg" alt="bookmarking symbol" 
+        data-js="something"/>
         <h2>Question 2:</h2>
         <div class="question-itself">What is Lorem Ipsum?</div>
         <div class="answer-button">
@@ -92,7 +98,7 @@
           quidem, fuga nobis voluptas eius ab dicta ipsam earum repellendus,
           magni ipsa.
         </div>
-        
+
         <div class="keywords-list">
           <div class="keyword">Keyword 1</div>
           <div class="keyword">Keyword 2</div>
