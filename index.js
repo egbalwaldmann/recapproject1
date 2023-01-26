@@ -11,6 +11,8 @@ bookmarkSvgTransparent.addEventListener("click", (eventOfTheClick) => {
   console.log(sourceAttribute);
   if (sourceAttribute === "assets/bookmark-regular.svg") {
     bookmarkSvgTransparent.setAttribute("src", "./assets/bookmark-solid.svg");
+  } else {
+    bookmarkSvgTransparent.setAttribute("src", "./assets/bookmark-regular.svg");
   }
 });
 
@@ -23,5 +25,30 @@ bookmarkSvgTransparent.addEventListener("click", (eventOfTheClick) => {
 // The toggle functionality should be applied by using a class which is named "hidden"
 // If the user clicks on an answer button, we want the button to say "hide answer" when the answer is displayed and "show answer" when the answer is not displayed.
 
-// const answerOne = document.querySelector('[data-js="answer-one"]');
-// console.log();
+const showAnswerButton = document.querySelector(
+  '[data-js="show-answer-button"]'
+);
+// console.log(showAnswerButton);
+
+
+
+
+
+const answerOne = document.querySelector('[data-js="answer-one"]');
+console.log(answerOne);
+
+showAnswerButton.addEventListener("click", (eventAfterClickingShowAnswer) => {
+  console.log(showAnswerButton.textContent);
+  if (
+    showAnswerButton.textContent === "Show Answer"
+    ) {
+    answerOne.style.display = "block";
+    showAnswerButton.textContent = "Hide Answer";
+  }
+  //    if (showAnswerButton.textContent.trim() !== "Show Answer");
+  else {
+    answerOne.style.display = "none";
+    showAnswerButton.textContent = "Show Answer";
+  }
+});
+

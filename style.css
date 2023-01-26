@@ -122,6 +122,13 @@ button {
   min-height: 100px;
 }
 
+/* .hidden {
+  display: none;
+}
+.active {
+  display: block;
+} */
+
 .keyword {
   /* font-weight: bold; */
   color: white;
