@@ -62,6 +62,8 @@ function handleInputChange(event, fieldName) {
   const maxLength = event.target.maxLength;
   const currentLength = event.target.value.length;
   const remaining = maxLength - currentLength;
+
+  // EGBAL: The following line is using the querySelector method to select an element from the DOM. The querySelector method uses a CSS selector to select the element. In this case, the selector is `#${fieldName}-counter`, which is selecting an element with an id equal to the value of the fieldName variable, followed by "-counter". This element is then assigned the remaining variable as its textContent. The remaining variable is the number of characters left in the field, calculated by subtracting the current length of the field's value from the maxLength attribute.
   document.querySelector(`#${fieldName}-counter`).textContent = remaining;
 }
 

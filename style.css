@@ -176,9 +176,7 @@ button {
   background-color: yellow;
   padding: 10px;
   position: relative;
-
 }
-
 
 .profile-card-photo {
   width: 50px;
@@ -188,7 +186,6 @@ button {
   /* outline: 1px red solid; */
 }
 
-
 .form {
   width: 100%;
   display: flex;
@@ -197,7 +194,13 @@ button {
   align-items: center;
 }
 
-
 /* body {
   font-family: 'Calibri', sans-serif;
 } */
+
+.text-counter {
+  margin: 10px;
+  padding: 3px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+}
