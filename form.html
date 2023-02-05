@@ -14,23 +14,35 @@
     </header>
 
     <main>
-      <h1>Form to add cards</h1>
+      <h1 class="form">Add Cards</h1>
 
-      <form class="form">
+      <form class="form" onsubmit="handleFormSubmit(event)">
         <label>Your Question:</label>
-        <input type="textarea" name="question" />
+        <input
+          type="textarea"
+          name="question"
+          maxlength="150"
+          oninput="handleInputChange(event, 'question')"
+        />
+        <div class="text-counter" id="question-counter">150</div>
 
-        <br /><br />
+        <br />
 
         <label>Your Answer:</label>
-        <input type="textarea" name="answer" />
+        <input
+          type="textarea"
+          name="answer"
+          maxlength="150"
+          oninput="handleInputChange(event, 'answer')"
+        />
+        <div class="text-counter" id="answer-counter">150</div>
 
-        <br /><br />
+        <br />
 
         <label>Tag:</label>
         <input type="text" name="tag" />
 
-        <br /><br />
+        <br />
 
         <input type="submit" value="Submit" />
       </form>

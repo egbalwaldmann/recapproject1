@@ -30,22 +30,15 @@ const showAnswerButton = document.querySelector(
 );
 // console.log(showAnswerButton);
 
-
-
-
-
 const answerOne = document.querySelector('[data-js="answer-one"]');
 console.log(answerOne);
 
 showAnswerButton.addEventListener("click", (eventAfterClickingShowAnswer) => {
   console.log(showAnswerButton.textContent);
-  if (
-    showAnswerButton.textContent === "Show Answer"
-    ) {
+  if (showAnswerButton.textContent === "Show Answer") {
     answerOne.style.display = "block";
     showAnswerButton.textContent = "Hide Answer";
     showAnswerButton.style.backgroundColor = "black";
-    
   }
   //    if (showAnswerButton.textContent.trim() !== "Show Answer");
   else {
@@ -55,3 +48,49 @@ showAnswerButton.addEventListener("click", (eventAfterClickingShowAnswer) => {
   }
 });
 
+// 3. Create new Cards
+// The data entered into the form by users should be used to create a new question, that will be displayed as a card like the other questions.
+
+// Listen the form's submit event
+// Prevent the default submit behavior to handle everything within JavaScript
+// Read all entered data from the input fields (question, answer, tags)
+// Generate all DOM element for a card with createElement()
+// Insert the form's data as text into the DOM elements
+// Append the card to the page, directly below the form
+
+function handleInputChange(event, fieldName) {
+  const maxLength = event.target.maxLength;
+  const currentLength = event.target.value.length;
+  const remaining = maxLength - currentLength;
+  document.querySelector(`#${fieldName}-counter`).textContent = remaining;
+}
+
+function handleFormSubmit(event) {
+  event.preventDefault();
+
+  // Read the data from the form
+  const question = event.target.question.value;
+  const answer = event.target.answer.value;
+  const tag = event.target.tag.value;
+
+  // Generate all DOM elements for a card
+  const cardContainer = document.createElement("div");
+  // EGBAL: make the displayed reponse colored and centered
+  cardContainer.style.backgroundColor = "lightgreen";
+  cardContainer.style.textAlign = "center";
+
+  const cardQuestion = document.createElement("p");
+  const cardAnswer = document.createElement("p");
+  const cardTag = document.createElement("p");
+
+  // Insert the form's data as text into the DOM elements
+  cardQuestion.textContent = question;
+  cardAnswer.textContent = answer;
+  cardTag.textContent = tag;
+
+  // Append the card to the page, directly below the form
+  cardContainer.appendChild(cardQuestion);
+  cardContainer.appendChild(cardAnswer);
+  cardContainer.appendChild(cardTag);
+  document.querySelector("main").appendChild(cardContainer);
+}
