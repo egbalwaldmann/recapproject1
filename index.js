@@ -44,11 +44,14 @@ showAnswerButton.addEventListener("click", (eventAfterClickingShowAnswer) => {
     ) {
     answerOne.style.display = "block";
     showAnswerButton.textContent = "Hide Answer";
+    showAnswerButton.style.backgroundColor = "black";
+    
   }
   //    if (showAnswerButton.textContent.trim() !== "Show Answer");
   else {
     answerOne.style.display = "none";
     showAnswerButton.textContent = "Show Answer";
+    showAnswerButton.style.backgroundColor = "green";
   }
 });
 

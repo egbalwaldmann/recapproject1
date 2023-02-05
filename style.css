@@ -107,7 +107,7 @@ button {
   padding: 10px;
   font-size: 1rem;
   font-weight: bold;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 0.1rem;
   cursor: pointer;
 }
@@ -186,4 +186,9 @@ button {
 
   margin: 15px;
   /* outline: 1px red solid; */
+}
+
+
+.form {
+  ;
 }

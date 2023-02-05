@@ -5,27 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
     <title>Quiz App</title>
   </head>
   <body>
     <header id="top">
       <h1>Quiz App</h1>
     </header>
-    <main>
-      <h1 class="profile-title">Profile</h1>
 
-      <article>
-        <div class="profile-card">
-          <div>
-            <img
-              src="assets/user-regular.svg"
-              class="profile-card-photo"
-              alt="profile picture"
-            />
-          </div>
-          <div><h2>Max Doe</h2></div>
-        </div>
-      </article>
+    <main>
+      <h1>Form to add cards</h1>
+
+      <form class="form">
+        <label>Your Question:</label>
+        <input type="textarea" name="question" />
+
+        <br /><br />
+
+        <label>Your Answer:</label>
+        <input type="textarea" name="answer" />
+
+        <br /><br />
+
+        <label>Tag:</label>
+        <input type="text" name="tag" />
+
+        <br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
     </main>
 
     <footer>
